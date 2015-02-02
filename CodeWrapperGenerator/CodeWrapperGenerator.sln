@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeWrapperGenerator", "CodeWrapperGenerator\CodeWrapperGenerator.csproj", "{4FBA2842-6EAC-4C0C-B63C-22300DC4FE2D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{82355669-E894-4F4E-ACF9-B9778C8173D3} = {82355669-E894-4F4E-ACF9-B9778C8173D3}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SrcLib", "SrcLib\SrcLib.csproj", "{82355669-E894-4F4E-ACF9-B9778C8173D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FBA2842-6EAC-4C0C-B63C-22300DC4FE2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBA2842-6EAC-4C0C-B63C-22300DC4FE2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FBA2842-6EAC-4C0C-B63C-22300DC4FE2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FBA2842-6EAC-4C0C-B63C-22300DC4FE2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82355669-E894-4F4E-ACF9-B9778C8173D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82355669-E894-4F4E-ACF9-B9778C8173D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82355669-E894-4F4E-ACF9-B9778C8173D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82355669-E894-4F4E-ACF9-B9778C8173D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
