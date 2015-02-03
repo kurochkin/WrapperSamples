@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -13,9 +14,9 @@ namespace CodeWrapperGenerator
         {
 
             var sb = new StringBuilder();
+            var currentDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             Assembly asmbl =
-                Assembly.LoadFile(
-                    @"C:\Users\Иван\Documents\visual studio 2013\Projects\CodeWrapperGenerator\SrcLib\bin\Debug\SrcLib.dll");
+                Assembly.LoadFile(Path.Combine(currentDir, "SrcLib.dll"));
             var classes = asmbl.GetTypes().Where(t => t.IsClass);
             foreach (var @class in classes)
             {
